@@ -1,8 +1,8 @@
 var mainElement = document.getElementById("main");
-var message = "Your dad hitting your mom is not funny. Even if he hit like a girl. it still would not be that much funny. I don't want to make you sad :(";
+var message = "I'm sorry. You opened up and shared your problems with me. I wanted to help solve them but instead I was an asshole. You are the sweetest and you don't deserve that abuse. I really like hanging out with you. but I'm scared of being vulnerable.  I don't know why I'm like that and I don't know how to fix it. but it makes me sick to think about. ";
 var story = message.split(".")
 
-var signing = ["Sincerely,", "Remi"]
+var signing = ["My fault,", "Remi"]
 
 
 function displayMessage(){
@@ -17,7 +17,7 @@ function displayMessage(){
             count++;
         }
 
-    }, 2000);
+    }, 1700);
 }
 function signature(){
     var count2 = 0

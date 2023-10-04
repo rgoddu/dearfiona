@@ -1,5 +1,5 @@
 var mainElement = document.getElementById("main");
-var message = "I'm sorry. You opened up and shared your problems with me. I wanted to help solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I like hanging out with you. but I'm scared of being vulnerable.  I don't know why I'm like that and I don't know how to fix it. but it makes me sick to think about. ";
+var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I like hanging out with you. but I'm scared of being vulnerable.  I don't know why I'm like that. it makes me sick to think I hurt you. ";
 var story = message.split(".")
 
 var signing = ["My fault,", "Remi"]
@@ -17,7 +17,7 @@ function displayMessage(){
             count++;
         }
 
-    }, 2200);
+    }, 1800);
 }
 function sendImage(){
     
@@ -36,7 +36,7 @@ function sendImage(){
             count3++;
         
         }
-    },1000)
+    },300)
 }
 function signature(){
     var imgEl = document.createElement("img")

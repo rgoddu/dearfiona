@@ -42,7 +42,7 @@ function signature() {
 
 
 function sendImage() {
-    welcomeElement.textContent = "uhh, yum";
+    welcomeElement.textContent = "mmmMmm";
     var count3 = 0
     var imgInterval = setInterval(() => {
 

@@ -1,5 +1,7 @@
 var mainElement = document.getElementById("main");
-var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I am just mean because I'm scared of being vulnerable.  I don't know why I'm like that. but it makes me sad to think I hurt you. ";
+var welcomeElement = document.getElementById("welcome")
+
+var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I am just mean because I'm scared of being vulnerable.  It makes me sad to think I hurt you. ";
 var story = message.split(".")
 
 var signing = ["My fault,", "Remi"]
@@ -7,6 +9,7 @@ var signing = ["My fault,", "Remi"]
 displayMessage()
 
 function displayMessage() {
+    welcomeElement.textContent = "Dear Fiona,";
     var count = 0
     var msgInterval = setInterval(() => {
         if (count > (story.length - 2)) {
@@ -15,10 +18,11 @@ function displayMessage() {
         }
         else {
             mainElement.textContent = story[count];
+            
             count++;
         }
 
-    }, 1000);
+    }, 1200);
 }
 
 function signature() {
@@ -36,12 +40,9 @@ function signature() {
     }, 800)
 }
 
-function selectImage() {
 
-    console.log(meme)
-}
 function sendImage() {
-
+    
     var count3 = 0
     var imgInterval = setInterval(() => {
 
@@ -52,7 +53,7 @@ function sendImage() {
         else {
             var imgEl = document.createElement("img")
             mainElement.textContent = " ";
-            var i = Math.floor(Math.random() * 14) + 1
+            var i = Math.floor(Math.random() * 13) + 1
             var meme = "./assets/img/image" + i + ".jpg"
             imgEl.setAttribute("src", meme)
             mainElement.appendChild(imgEl)

@@ -22,7 +22,7 @@ function displayMessage() {
             count++;
         }
 
-    }, 1600);
+    }, 160);
 }
 
 function signature() {

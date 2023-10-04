@@ -1,5 +1,5 @@
 var mainElement = document.getElementById("main");
-var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I like hanging out with you. but I'm scared of being vulnerable.  I don't know why I'm like that. it makes me sick to think I hurt you. ";
+var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. You are awesome but I'm scared of being vulnerable.  I don't know why I'm like that. it makes me sick to think I hurt you. ";
 var story = message.split(".")
 
 var signing = ["My fault,", "Remi"]

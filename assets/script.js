@@ -1,10 +1,10 @@
 var mainElement = document.getElementById("main");
 var welcomeElement = document.getElementById("welcome")
 
-var message = "I'm sorry. You shared your problems. & I wanted to solve them but instead I was being an asshole. You are the sweetest and you don't deserve that. It makes me sad to think I hurt you. I think I am just being jerk because I'm scared of being vulnerable. ";
+var message = "I'm sorry. You shared your problems. & I wanted to solve them but instead I was being an asshole. You are the sweetest and you don't deserve that. It makes me sad to think I hurt you. I am a jerk and I think I'm scared of being vulnerable. ";
 var story = message.split(".")
 
-var signing = ["My fault,", "Remi"]
+var signing = ["My fault,", "Remi" , "also,"]
 
 displayMessage()
 
@@ -37,7 +37,7 @@ function signature() {
             mainElement.textContent = signing[count2];
             count2++
         }
-    }, 800)
+    }, 1000)
 }
 
 

@@ -6,52 +6,58 @@ var signing = ["My fault,", "Remi"]
 
 displayMessage()
 
-function displayMessage(){
+function displayMessage() {
     var count = 0
     var msgInterval = setInterval(() => {
-        if (count > (story.length - 2)){
+        if (count > (story.length - 2)) {
             clearInterval(msgInterval)
             signature();
         }
-        else{
+        else {
             mainElement.textContent = story[count];
             count++;
         }
 
-    }, 1800);
+    }, 1000);
 }
 
-function signature(){
+function signature() {
     var imgEl = document.createElement("img")
     var count2 = 0
     var sgnInterval = setInterval(() => {
-        if (signing[count2] === undefined){
+        if (signing[count2] === undefined) {
             clearInterval(sgnInterval)
             sendImage()
         }
-        else{
+        else {
             mainElement.textContent = signing[count2];
             count2++
         }
-    },800)
+    }, 800)
 }
 
-function sendImage(){
-    
+function selectImage() {
+
+    console.log(meme)
+}
+function sendImage() {
+
     var count3 = 0
     var imgInterval = setInterval(() => {
-        
-        if (count3 > 1){
+
+        if (count3 > 20) {
             clearInterval(imgInterval)
-            ;
+                ;
         }
-        else{
+        else {
             var imgEl = document.createElement("img")
             mainElement.textContent = " ";
-            imgEl.setAttribute("src", "assets/IMG-8930.jpg")
+            var i = Math.floor(Math.random() * 14) + 1
+            var meme = "./assets/img/image" + i + ".jpg"
+            imgEl.setAttribute("src", meme)
             mainElement.appendChild(imgEl)
             count3++;
-        
+
         }
-    },400)
+    }, 75)
 }

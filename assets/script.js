@@ -1,7 +1,7 @@
 var mainElement = document.getElementById("main");
 var welcomeElement = document.getElementById("welcome")
 
-var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I am just mean because I'm scared of being vulnerable.  It makes me sad to think I hurt you. ";
+var message = "I'm sorry. You shared your problems with me. I wanted to solve them but instead I was an asshole. You are the sweetest and you don't deserve that. I am a jerk because I'm scared of being vulnerable.  It makes me sad to think I hurt you. ";
 var story = message.split(".")
 
 var signing = ["My fault,", "Remi"]
@@ -22,7 +22,7 @@ function displayMessage() {
             count++;
         }
 
-    }, 1200);
+    }, 1600);
 }
 
 function signature() {

@@ -36,7 +36,7 @@ function sendImage(){
             count3++;
         
         }
-    },300)
+    },400)
 }
 function signature(){
     var imgEl = document.createElement("img")

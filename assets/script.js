@@ -34,7 +34,7 @@ function sendImage() {
         }
         else {
             welcomeElement.textContent = ""
-            welcomeElement.textContent = "fk fuck fuc fck"
+            welcomeElement.textContent = "wow"
             // var imgEl = document.createElement("img")
             var imgEl = document.querySelector("#imghere")
             mainElement.textContent = " ";

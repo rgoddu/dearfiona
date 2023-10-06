@@ -54,7 +54,7 @@ function sendImage() {
             // var imgEl = document.createElement("img")
             var imgEl = document.querySelector("#imghere")
             mainElement.textContent = " ";
-            var i = Math.floor(Math.random() * 22) + 1
+            var i = Math.floor(Math.random() * 19) + 1
             var meme = "./assets/img/image" + i + ".jpg"
             imgEl.setAttribute("src", meme)
             mainElement.appendChild(imgEl)

@@ -42,7 +42,7 @@ sendImage()
 
 
 function sendImage() {
-    welcomeElement.textContent = "holdon";
+    welcomeElement.textContent = "mamaaa";
     var count3 = 0
     var imgInterval = setInterval(() => {
 
@@ -51,7 +51,8 @@ function sendImage() {
                 ;
         }
         else {
-            var imgEl = document.createElement("img")
+            // var imgEl = document.createElement("img")
+            var imgEl = document.querySelector("#imghere")
             mainElement.textContent = " ";
             var i = Math.floor(Math.random() * 22) + 1
             var meme = "./assets/img/image" + i + ".jpg"

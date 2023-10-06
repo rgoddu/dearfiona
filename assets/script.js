@@ -22,7 +22,7 @@ function displayMessage() {
             count++;
         }
 
-    }, 160);
+    }, 500);
 }
 
 function signature() {
@@ -37,7 +37,7 @@ function signature() {
             mainElement.textContent = signing[count2];
             count2++
         }
-    }, 1000)
+    }, 500)
 }
 
 

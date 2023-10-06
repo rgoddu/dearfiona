@@ -42,7 +42,7 @@ sendImage()
 
 
 function sendImage() {
-    welcomeElement.textContent = "mamaaa";
+    welcomeElement.textContent = "maeme update";
     var count3 = 0
     var imgInterval = setInterval(() => {
 

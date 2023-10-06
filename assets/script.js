@@ -1,12 +1,16 @@
 var mainElement = document.getElementById("main");
 var welcomeElement = document.getElementById("welcome")
 
-var message = "I'm sorry. You shared your problems. & I wanted to solve them but instead I was being an asshole. You are the sweetest and you don't deserve that. It makes me sad to think I hurt you. I am a jerk and I think I'm scared of being vulnerable. ";
-var story = message.split(".")
+// var message = "I'm sorry. You shared your problems. & I wanted to solve them but instead I was being an asshole. You are the sweetest and you don't deserve that. It makes me sad to think I hurt you. I am a jerk and I think I'm scared of being vulnerable. ";
+// var story = message.split(".")
 
-var signing = ["My fault,", "Remi" , "also,"]
+// var signing = ["My fault,", "Remi" , "also,"]
+var startButton = document.querySelector("button")
+startButton.addEventListener("click", () => {
+    sendImage()
+})
 
-sendImage()
+// sendImage()
 
 // function displayMessage() {
 //     welcomeElement.textContent = "Dear Fiona,";
@@ -42,15 +46,18 @@ sendImage()
 
 
 function sendImage() {
-    welcomeElement.textContent = "maeme update";
+   
     var count3 = 0
     var imgInterval = setInterval(() => {
 
         if (count3 > 20) {
+            welcomeElement.textContent = "why did you click that?";
             clearInterval(imgInterval)
                 ;
         }
         else {
+            welcomeElement.textContent = ""
+            welcomeElement.textContent = "fk fuck fuc fck"
             // var imgEl = document.createElement("img")
             var imgEl = document.querySelector("#imghere")
             mainElement.textContent = " ";

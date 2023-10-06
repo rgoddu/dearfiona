@@ -6,43 +6,43 @@ var story = message.split(".")
 
 var signing = ["My fault,", "Remi" , "also,"]
 
-displayMessage()
+sendImage()
 
-function displayMessage() {
-    welcomeElement.textContent = "Dear Fiona,";
-    var count = 0
-    var msgInterval = setInterval(() => {
-        if (count > (story.length - 2)) {
-            clearInterval(msgInterval)
-            signature();
-        }
-        else {
-            mainElement.textContent = story[count];
+// function displayMessage() {
+//     welcomeElement.textContent = "Dear Fiona,";
+//     var count = 0
+//     var msgInterval = setInterval(() => {
+//         if (count > (story.length - 2)) {
+//             clearInterval(msgInterval)
+//             signature();
+//         }
+//         else {
+//             mainElement.textContent = story[count];
             
-            count++;
-        }
+//             count++;
+//         }
 
-    }, 500);
-}
+//     }, 160);
+// }
 
-function signature() {
-    var imgEl = document.createElement("img")
-    var count2 = 0
-    var sgnInterval = setInterval(() => {
-        if (signing[count2] === undefined) {
-            clearInterval(sgnInterval)
-            sendImage()
-        }
-        else {
-            mainElement.textContent = signing[count2];
-            count2++
-        }
-    }, 500)
-}
+// function signature() {
+//     var imgEl = document.createElement("img")
+//     var count2 = 0
+//     var sgnInterval = setInterval(() => {
+//         if (signing[count2] === undefined) {
+//             clearInterval(sgnInterval)
+//             sendImage()
+//         }
+//         else {
+//             mainElement.textContent = signing[count2];
+//             count2++
+//         }
+//     }, 1000)
+// }
 
 
 function sendImage() {
-    welcomeElement.textContent = "mmmMmm";
+    welcomeElement.textContent = "holdon";
     var count3 = 0
     var imgInterval = setInterval(() => {
 
@@ -53,7 +53,7 @@ function sendImage() {
         else {
             var imgEl = document.createElement("img")
             mainElement.textContent = " ";
-            var i = Math.floor(Math.random() * 12) + 1
+            var i = Math.floor(Math.random() * 22) + 1
             var meme = "./assets/img/image" + i + ".jpg"
             imgEl.setAttribute("src", meme)
             mainElement.appendChild(imgEl)

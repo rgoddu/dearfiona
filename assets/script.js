@@ -7,10 +7,10 @@ startButton.addEventListener("click", () => {
     sendImage()
 })
 
-// const fs = require('fs');
-const dir = './img';
+const fs = require('fs');
+const dir = './assets/img';
 
- readdir(dir, (err, files) => {
+ fs.readdir(dir, (err, files) => {
   console.log(files.length);
 });
 

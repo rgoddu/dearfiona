@@ -45,12 +45,19 @@ function sendImage() {
     var meme = "./assets/img/" + memeList[i] + ".jpg"
     imgEl.setAttribute("src", meme)
     mainElement.appendChild(imgEl)
-        if(memeList.length%2 !== 0){
-            welcomeElement.textContent = "why did you click that?";
+        if(memeList.length%3 === 0){
+            console.log(memeList.length)
+            welcomeElement.textContent = "nobody ever listens to little old remi >:(";
         }
-        else {
-        welcomeElement.textContent = "nobody ever listens to little old remi >:(";
-    }    
+        else if(memeList.length%2 === 0){
+        welcomeElement.textContent = "I am getting angry";
+        console.log(memeList.length)
+
+    }    else{
+        welcomeElement.textContent = "why did you click that?";
+        console.log(memeList.length)
+
+    }
         memeList.splice(i, 1)
             console.log(memeList.length)
     storeMemeList()

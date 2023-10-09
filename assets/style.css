@@ -7,7 +7,7 @@
   }
   
   #welcome {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     margin-bottom: 20px;
     font-size: 20px;
     width: 100%;
@@ -15,7 +15,8 @@
   }
   
   #main {
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    display: flex;
 
     font-weight: bold;
     margin-bottom: 20px;
@@ -35,7 +36,7 @@
     height: 300px;
     margin: auto;
   }
-  #imgcontainer{
+  /* #imgcontainer{
     /* height: 100%; */
     /* background-color: blue; */
-  }
+  /* }  */

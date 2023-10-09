@@ -30,10 +30,10 @@ function memeScroll(){
         imgEl.setAttribute("src", spinMeme)
         mainElement.appendChild(imgEl)
         count++
-        if(count > 19){
+        if(count > 39){
             clearInterval(spinInterval)
         }
-    }, 100);
+    }, 50);
 }
 
 function sendImage() {

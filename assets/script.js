@@ -205,8 +205,8 @@ function submitQuiz() {
 // //             count++;
 // //         }
 
-//     // }, 160);
-// // }
+    // }, 160);
+// }
 
 // // function signature() {
 // //     var imgEl = document.createElement("img")
@@ -222,6 +222,23 @@ function submitQuiz() {
 // //         }
 // //     }, 1000)
 // // }
+
+
+// function sendImage() {
+//     welcomeElement.textContent = "holdon";
+//     var count3 = 0
+//     var imgInterval = setInterval(() => {
+
+//         if (count3 > 20) {
+//             clearInterval(imgInterval)
+//                 ;
+//         }
+//         else {
+//             mainElement.textContent = signing[count2];
+//             count2++
+//         }
+//     }, 1000)
+// }
 
 
 // function sendImage() {
